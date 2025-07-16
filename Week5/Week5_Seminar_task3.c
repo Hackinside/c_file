@@ -1,6 +1,5 @@
 #include<stdio.h>
 int main(){
-    // Nested while loop for the challenge
     int row, col;
 
     printf("Enter the number of rows: ");
