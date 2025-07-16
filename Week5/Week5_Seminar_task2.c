@@ -1,14 +1,13 @@
 #include<stdio.h>
 int main(){
-    // Nested while loop for the challenge
     int row = 0;
-    while (row < 3) { // Three rows
+    while (row < 3) { 
         int col = 0;
-        while (col < 3) { // Three columns
+        while (col < 3) { 
             printf("* ");
             col++;
         }
-        printf("\n"); // New line after each row
+        printf("\n"); 
         row++;
     }
     return 0;
