@@ -18,7 +18,7 @@ int main() {
     printf("\nNumbers in reverse order:\n");
     for (j = j - 1; j >= 0; j--) {
         printf("%d\n", numbs[j]);
-    }    // Sort the numbers in ascending order using bubble sort
+    }    
     for (int i = 0; i < j - 1; i++) {
         for (int k = 0; k < j - 1 - i; k++) {
             if (numbs[k] > numbs[k+1]) {

@@ -3,21 +3,10 @@
 
 int main() {
     char str1[] = "George";
-    char str2[] = "Edward";
-    int areSame = -1; 
+    char str2[] = "george";
+    int result = strcmp(str1, str2);
 
-    if ((int)strlen(str1) != (int)strlen(str2)) {
-        areSame = -1;
-    } else {
-        for (int i = 0; i < (int)strlen(str1); i++) {
-            if (str1[i] != str2[i]) { 
-                areSame = 0;
-                break; 
-            }
-        }
-    }
-
-    if (areSame) {
+    if (result == 0) {
         printf("SAME\n");
     } else {
         printf("DIFFERENT\n");
