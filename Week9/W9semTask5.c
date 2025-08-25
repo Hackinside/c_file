@@ -1,34 +1,34 @@
-    #include<stdio.h>  
+#include<stdio.h>  
       
-    void factorial(int);  
+void factorial(int);  
       
-    int main()  
+int main()  
+{  
+    int num;  
+      
+    printf("Enter a positive number to find Factorial\n");  
+    scanf("%d", &num);  
+      
+    factorial(num);  
+      
+    return 0;  
+}  
+      
+void factorial(int num)  
+{  
+    int count, fact = 1;  
+      
+    if(num == 0)  
     {  
-        int num;  
-      
-        printf("Enter a positive number to find Factorial\n");  
-        scanf("%d", &num);  
-      
-        factorial(num);  
-      
-        return 0;  
+        printf("Factorial of 0 is 1 (!0 = 1)\n");  
     }  
-      
-    void factorial(int num)  
+    else  
     {  
-        int count, fact = 1;  
-      
-        if(num == 0)  
+        for(count = 1; count <= num; count++)  
         {  
-            printf("Factorial of 0 is 1 (!0 = 1)\n");  
+            fact = fact * count;  
         }  
-        else  
-        {  
-            for(count = 1; count <= num; count++)  
-            {  
-                fact = fact * count;  
-            }  
       
-            printf("\nFactorial of %d is %d (!%d = %d)\n", num, fact, num, fact);  
-        }  
+        printf("\nFactorial of %d is %d (!%d = %d)\n", num, fact, num, fact);  
     }  
+}
